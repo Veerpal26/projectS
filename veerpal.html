@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+  <title>Basic HTML Document Layout</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#animate").click(function(){
+        $("img").animate({left: '250px',background: '#FF0000'});
+		
+    });
+	
+	$("#animateBack").click(function(){
+        $("img").animate({left: '0px',background: '#98bf21'});
+		
+    });
+	
+	$("#drink").click(function(){
+        $("#h1").css("color", "red").slideUp(2000).slideDown(2000);
+    });
+	
+	
+	$("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+
+</script> 
+</head>
+<body>
+<button id="animate">Start Animation</button>
+<button id="animateBack">Rewind</button>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<button id="drink">Drink</button>
+<title>Jquery</title>
+<h1>Veerpal Kaur</h1>
+<h2>ID-C0704660</h2>
+
+<p>Currently I am studying Computer Programming</p>
+<p id="p1">I am studying in Lambton College</p>
+<p>
+I like to play games.Particularly, I love to play badminton.Reading books and watching movies also my hobbies.
+<div style="background:#98bf21;height:500px;width:400px;position:absolute;"></div>
+
+</body>
+</html>
